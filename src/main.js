@@ -21,6 +21,7 @@ import VueRouter from "vue-router"
 Vue.use(VueRouter)
 
 
+
 //导入路由js
 import router from "./router.js"
 // 导入vue-resource
@@ -32,8 +33,10 @@ var vm = new Vue({
     render:function(creatElement){
         return creatElement(App); 
     },
-    router:router
-    
+    router:router,
+    // created(){
+    //     console.log(format(1555914716000))
+    // }
 })
 
 // // 新闻接口测试
