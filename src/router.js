@@ -7,6 +7,7 @@ import NewsContainer from "./components/NewsContainer.vue"
 import ShopCartContainer from "./components/ShopCartContainer.vue"
 import NewList from "./components/news/NewList.vue"
 import Imgs from "./components/imgs/Imgs.vue"
+import NewDetails from"./components/news/NewDetails.vue"
 var router = new VueRouter({
     // data:function(){
     //     return {}
@@ -19,7 +20,8 @@ var router = new VueRouter({
         {path:'/shopcart',component:ShopCartContainer},
         // 首页下的路由
         {path:'/home/newlist',component:NewList},
-        {path:'/home/imgs',component:Imgs}
+        {path:'/home/imgs',component:Imgs},
+        {path:'/news/newdetails/:article_url',component:NewDetails}
     ],
     linkActiveClass:'mui-active'
 })

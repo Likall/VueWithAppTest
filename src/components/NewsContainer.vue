@@ -3,7 +3,7 @@
       <!-- mui-list -->
     <ul class="mui-table-view">
       <li class="mui-table-view-cell mui-media" v-for="item in newList" :key="item.item_id">
-        <a href="javascript:;">
+        <router-link :to="'/news/newdetails/'+item.aggr_type">
           <img class="mui-media-object mui-pull-left" src="../imgs/home/App_02.jpg">
           <div class="mui-media-body">
               <!-- appname -->
@@ -14,7 +14,7 @@
                 <span class="time">{{item.cursor}}</span>
             </div>
           </div>
-        </a>
+        </router-link>
       </li>
     </ul>
   </div>
